@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora basica</h1>
+    <label for="a">Ingrese el primer valor</label>
+    <input type="text" id="a">
+    <label for="b">Ingrese el segundo valor</label>
+    <input type="text" id="b">
+    <button type="button"  onclick="getValueInput()"> 
+        Presiona para calcular 
+    </button> 
+    <script>
+        const getValueInput = () =>{
+        let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+
+        let suma=parseInt(a)+parseInt(b);
+        let resta=a-b;
+        let mult=a*b;
+        let div=a/b;
+
+        document.write("La suma es ",suma,"<br>");
+        document.write("La resta es ",resta,"<br>");
+        document.write("La mutiplicacion es ",mult,"<br>");
+        document.write("La division es ",div,"<br>");
+
+     }
+    </script>
+</body>
+</html>
